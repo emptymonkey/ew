@@ -14,6 +14,6 @@ Enjoy!
 
 ## ew shellcode ##
 
-The files with shellcode are the same ew, but were build with '-Os' and then stripped, before being run through xxd -p. This is useful when the target host has xxd but no compiler.
+The files with shellcode are the same ew, but were built with '-Os' and then stripped, before being run through xxd -p. This is useful when the target host has xxd but no compiler.
 
 	cat ew-x64-shellcode.hex | xxd -p -r > ew
