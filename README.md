@@ -7,8 +7,8 @@ _ew_ is a simple wrapper program for circumventing ruid / euid mistmatches durin
 	setregid();
 	execve();
 
-Another quick method if perl is available would be:
-	perl -U -e '$<=$(=$>;system("/bin/bash");'
+Another quick method if python is available would be:
+	/usr/bin/python -c 'import os; os.setuid(os.geteuid()); os.setgid(os.geteuid()); os.system("/bin/bash")'
 
 Enjoy!
 
